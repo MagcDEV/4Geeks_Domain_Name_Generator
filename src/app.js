@@ -1,11 +1,22 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+//write your code here
+let pronoun = ['the','our'];
+let adj = ['great', 'big' ];
+let noun = ['jogger','racoon'];
+let domain = ['.com', '.ve']
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+for (var h=0;h<pronoun.length;h++){
+  var prono = pronoun[h];
+  for (var s=0;s<adj.length;s++){
+    var ad = adj[s];
+    for (var p=0;p<noun.length;p++){
+      var nou = noun[p];
+      for (var e=0;e<domain.length;e++){
+        var domai = domain[e];
+        console.log(prono+ad+nou+domai);        
+      }
+    }
+  }
+}
+
+
